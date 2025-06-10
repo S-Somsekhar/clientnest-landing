@@ -280,7 +280,7 @@ export default function Home() {
       Got Questions?
     </h2>
     <p className="mt-4 text-lg text-gray-700 text-center">
-      We've got answers.
+      We&apos;sve got answers.
     </p>
 
     <div className="mt-12 space-y-6">
