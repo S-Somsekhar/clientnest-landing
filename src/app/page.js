@@ -407,7 +407,9 @@ export default function Home() {
         </div>
         <div className="mt-6 text-center text-sm text-gray-500">
           <span className="inline-flex items-center gap-2">
-            <img src="/stripe-secure.svg" alt="Stripe Secured" className="h-5" />
+            import Image from "next/image";
+            // ...
+            <Image src="/stripe-secure.svg" alt="Stripe Secured" width={80} height={20} className="h-5 w-auto" />
             Payments secured via Stripe
           </span>
         </div>
