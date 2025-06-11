@@ -40,7 +40,7 @@ export default function Home() {
                 <tr className="bg-blue-900 text-white">
                   <th className="p-4">Tool</th>
                   <th className="p-4">Spreadsheets</th>
-                  <th className="p-4">Other CRMs</th>
+                  <th className="p-4">Traditional CRMs</th>
                   <th className="p-4">ClientNest</th>
                 </tr>
               </thead>
@@ -125,7 +125,7 @@ export default function Home() {
 <section className="w-full bg-gray-50 py-20 px-6">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
-      See It In Action
+      See it in Action
     </h2>
     <p className="mt-4 text-lg text-gray-700">
       Track leads, follow up, and close — all in under 60 seconds.
@@ -163,7 +163,7 @@ export default function Home() {
     {/* Text Content */}
     <div className="md:w-1/2 text-center md:text-left">
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-        Never Let a Lead Go Cold Again
+        Never Let a Lead Go Cold Again!
       </h2>
       <p className="text-gray-700 text-lg mb-6">
         ClientNest tracks inactivity and nudges you when it&apos;s time to follow up — intelligently. 
@@ -183,7 +183,40 @@ export default function Home() {
     </div>
   </div>
 </section>
+<section className="w-full bg-white py-20 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+    
+    {/* GIF Placeholder - keep this gif in public/gifs/csv-import.gif */}
+    <div className="md:w-1/2">
+      <img 
+        src="/gifs/csv-import.gif" 
+        alt="Bulk CSV Import Animation" 
+        className="rounded-xl shadow-xl w-full max-w-xl mx-auto hover:scale-105 transition-transform duration-300" 
+      />
+    </div>
 
+    {/* Text Content */}
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        Migrate from Sheets in Seconds
+      </h2>
+      <p className="text-gray-700 text-lg mb-6">
+        Ditch the spreadsheet chaos. Import all your leads in one go and start managing them inside ClientNest&apos;s powerful pipeline view — instantly.
+      </p>
+      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
+        <li>Upload your lead list as a CSV/XLSX</li>
+        <li>Instant mapping to fields (no tech skills needed)</li>
+        <li>Bulk import hundreds of contacts in seconds</li>
+      </ul>
+      <a 
+        href="#"
+        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
+      >
+        Import & Go → 
+      </a>
+    </div>
+  </div>
+</section>
 
 <section className="w-full bg-white py-20 px-6">
   <div className="max-w-6xl mx-auto text-center">
@@ -229,7 +262,7 @@ export default function Home() {
 <section className="w-full bg-gray-50 py-20 px-6">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
-      Simple, Honest Pricing
+      Simple, Affordable Pricing
     </h2>
     <p className="mt-4 text-lg text-gray-700">
       No tiers. No tricks. Just plans that work.
@@ -297,6 +330,9 @@ export default function Home() {
       </div>
     </div>
   </div>
+      <p className="mt-6 text-sm text-center font-medium text-gray-500">
+      Costs less than two Big Macs a month. But helps you close deals worth thousands.
+      </p>
 </section>
 
 
@@ -306,7 +342,7 @@ export default function Home() {
       Got Questions?
     </h2>
     <p className="mt-4 text-lg text-gray-700 text-center">
-      We&apos;sve got answers.
+      We&apos;ve got answers.
     </p>
 
     <div className="mt-12 space-y-6">
