@@ -1,5 +1,6 @@
 // src/app/page.js
 import Image from "next/image";
+import WaitlistForm from "./components/WaitlistForm";
 export const metadata = {
   title: 'ClientNest – Close More Clients, Effortlessly',
   description: 'Ditch spreadsheets. Organize your leads, follow-ups, and deals – all in one smart CRM.',
@@ -17,49 +18,7 @@ export default function Home() {
           Simple CRM for solopreneurs, coaches, freelancers & closers.
         </p>
 
-        <section className="w-full bg-white py-20 px-6">
-          <div className="max-w-xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900">Join the Waitlist</h2>
-            <p className="mt-4 text-gray-700">Get early access + a 14-day free trial when we launch.</p>
-
-            <form
-              action="https://submit-form.com/bzWHu1l6p"
-              method="POST"
-              className="mt-8 space-y-4 text-left"
-            >
-              <input type="hidden" name="_redirect" value="/success" />
-              <input type="checkbox" name="_honeypot" className="hidden" style={{ display: "none" }} />
-
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-black focus:ring-2 focus:ring-blue-900 focus:outline-none focus:border-blue-900 transition"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-black focus:ring-2 focus:ring-blue-900 focus:outline-none focus:border-blue-900 transition"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="What do you struggle with in client management?"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-black focus:ring-2 focus:ring-blue-900 focus:outline-none focus:border-blue-900 transition"
-                rows="4"
-              ></textarea>
-
-              <button
-                type="submit"
-                className="w-full bg-blue-900 text-white py-3 rounded-xl hover:bg-blue-800 active:bg-blue-950 transition-colors"
-              >
-                Join Waitlist
-              </button>
-            </form>
-          </div>
-        </section>
+      <WaitlistForm />
 
         <p className="mt-4 text-sm text-gray-500">
           Launching July 2025 – No credit card required.
