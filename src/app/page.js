@@ -5,7 +5,7 @@ export const metadata = {
   title: 'ClientNest – Close More Clients, Effortlessly',
   description: 'Ditch spreadsheets. Organize your leads, follow-ups, and deals – all in one smart CRM.',
 };
-
+{/* Hero Section */}
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 flex flex-col items-center px-6 py-20 text-center font-sans">
@@ -24,56 +24,197 @@ export default function Home() {
           Launching July 2025 – No credit card required.
         </p>
       </div>
+{/* Comparison Table */}
+<section className="w-full bg-white py-5 px-6 mt-24">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
+      Tired of Losing Leads?
+    </h2>
+    <p className="mt-4 text-lg md:text-xl text-gray-700">
+      Track. Follow up. Close. Stress-free.
+    </p>
 
-      <section className="w-full bg-white py-5 px-6 mt-24">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
-            Tired of Losing Leads?
-          </h2>
-          <p className="mt-4 text-lg md:text-xl text-gray-700">
-            Track. Follow up. Close. Stress-free.
-          </p>
+    {/* Scrollable Table Wrapper */}
+    <div className="mt-12 relative overflow-x-auto w-full">
+     
+      <table className="min-w-full text-left border-collapse shadow-md rounded-xl overflow-hidden z-0 relative">
+        <thead>
+          <tr className="bg-blue-900 text-white">
+            <th className="p-4">Tool</th>
+            <th className="p-4">Spreadsheets</th>
+            <th className="p-4">Traditional CRMs</th>
+            <th className="p-4">ClientNest</th>
+          </tr>
+        </thead>
+        <tbody className="text-gray-700 bg-white">
+          <tr className="bg-gray-50 border-b">
+            <td className="p-4 font-semibold">Ease of Use</td>
+            <td className="p-4">Manual, cluttered</td>
+            <td className="p-4">Complex & bloated</td>
+            <td className="p-4">One-click workflow</td>
+          </tr>
+          <tr className="border-b">
+            <td className="p-4 font-semibold">Follow-ups</td>
+            <td className="p-4">Easily forgotten</td>
+            <td className="p-4">Over-engineered</td>
+            <td className="p-4">Daily reminders</td>
+          </tr>
+          <tr className="bg-gray-50 border-b">
+            <td className="p-4 font-semibold">Setup Time</td>
+            <td className="p-4">Hours</td>
+            <td className="p-4">Days</td>
+            <td className="p-4">5 mins</td>
+          </tr>
+          <tr>
+            <td className="p-4 font-semibold">Cost</td>
+            <td className="p-4">Free (but chaotic)</td>
+            <td className="p-4">$40+/mo</td>
+            <td className="p-4">$10/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-          <div className="mt-12 overflow-x-auto">
-            <table className="w-full text-left border-collapse shadow-md rounded-xl overflow-hidden">
-              <thead>
-                <tr className="bg-blue-900 text-white">
-                  <th className="p-4">Tool</th>
-                  <th className="p-4">Spreadsheets</th>
-                  <th className="p-4">Traditional CRMs</th>
-                  <th className="p-4">ClientNest</th>
-                </tr>
-              </thead>
-              <tbody className="text-gray-700 bg-white">
-                <tr className="bg-gray-50 border-b">
-                  <td className="p-4 font-semibold">Ease of Use</td>
-                  <td className="p-4">Manual, cluttered</td>
-                  <td className="p-4">Complex & bloated</td>
-                  <td className="p-4">One-click workflow</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-semibold">Follow-ups</td>
-                  <td className="p-4">Easily forgotten</td>
-                  <td className="p-4">Over-engineered</td>
-                  <td className="p-4">Daily reminders</td>
-                </tr>
-                <tr className="bg-gray-50 border-b">
-                  <td className="p-4 font-semibold">Setup Time</td>
-                  <td className="p-4">Hours</td>
-                  <td className="p-4">Days</td>
-                  <td className="p-4">5 mins</td>
-                </tr>
-                <tr>
-                  <td className="p-4 font-semibold">Cost</td>
-                  <td className="p-4">Free (but chaotic)</td>
-                  <td className="p-4">$40+/mo</td>
-                  <td className="p-4">$10/mo</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+
+{/* Demo Vid */}
+<section className="w-full bg-gray-50 py-20 px-6">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
+      See it in Action
+    </h2>
+    <p className="mt-4 text-lg text-gray-700">
+      Track leads, follow up, and close — all in under 60 seconds.
+    </p>
+
+    <div className="mt-10 rounded-2xl overflow-hidden border border-gray-200 shadow-xl max-w-4xl mx-auto">
+      <video
+        src="/demo.mp4"
+        controls
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="w-full h-auto"
+      />
+    </div>
+
+    <p className="mt-6 text-sm text-gray-500 italic">
+      No clutter. No learning curve. Just results.
+    </p>
+  </div>
+</section>
+
+{/* USP Section */}
+<section className="w-full bg-gray-100 py-20 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+    
+    {/* GIF Placeholder - keep this gif in public/gifs/csv-import.gif */}
+    <div className="md:w-1/2">
+      <img 
+        src="/gifs/csv-import.gif" 
+        alt="Bulk CSV Import Animation" 
+        className="rounded-xl shadow-xl w-full max-w-xl mx-auto hover:scale-105 transition-transform duration-300" 
+      />
+    </div>
+
+    {/* Text Content */}
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        Migrate from Sheets in Seconds
+      </h2>
+      <p className="text-gray-700 text-lg mb-6">
+        Ditch the spreadsheet chaos. Import all your leads in one go and start managing them inside ClientNest&apos;s powerful pipeline view — instantly.
+      </p>
+      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
+        <li>Upload your lead list as a CSV/XLSX</li>
+        <li>Instant mapping to fields (no tech skills needed)</li>
+        <li>Bulk import hundreds of contacts in seconds</li>
+      </ul>
+      <a 
+        href="#"
+        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
+      >
+        Import & Go → 
+      </a>
+    </div>
+  </div>
+</section>
+<section className="w-full bg-white py-20 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    {/* GIF Placeholder */}
+    <div className="md:w-1/2">
+      <img 
+        src="/gifs/smart-nudge.gif" 
+        alt="Smart Lead Nudge Animation" 
+        className="rounded-xl shadow-xl w-full max-w-md mx-auto hover:scale-105 transition-transform duration-300" 
+      />
+    </div>
+
+    {/* Text Content */}
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        Never Let a Lead Go Cold Again!
+      </h2>
+      <p className="text-gray-700 text-lg mb-6">
+        ClientNest tracks inactivity and nudges you when it&apos;s time to follow up — intelligently. 
+        Whether it&apos;s been 3 days or 3 weeks, we help you strike while the deal is still hot.
+      </p>
+      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
+        <li>Auto-identifies cold leads in your pipeline</li>
+        <li>Smart follow-up reminders inside your dashboard</li>
+        <li>Works seamlessly with Email & WhatsApp</li>
+      </ul>
+      <a 
+        href="#"
+        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
+      >
+        Try Smart Nudges in Action →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section className="w-full bg-gray-100 py-20 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    {/* Text Content */}
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        From Lead to Long-Term Client
+      </h2>
+      <p className="text-gray-700 text-lg mb-6">
+        ClientNest doesn&apos;t stop at closing deals. Convert won leads into active clients, 
+        track service history, and manage revenue – all from the same dashboard.
+      </p>
+      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
+        <li>Toggle &apos;Won&apos; leads into clients instantly</li>
+        <li>Maintain service history and task logs</li>
+        <li>Track total revenue earned from each client</li>
+      </ul>
+      <a 
+        href="#"
+        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
+      >
+        See Client Dashboard →
+      </a>
+    </div>
+
+    {/* GIF Placeholder */}
+    <div className="md:w-1/2">
+      <img 
+        src="/gifs/client-dashboard.gif" 
+        alt="Client Dashboard Animation" 
+        className="rounded-xl shadow-xl w-full max-w-xl mx-auto hover:scale-105 transition-transform duration-300" 
+      />
+    </div>
+
+  </div>
+</section>
+
+{/* Feature Stack */}
       <section className="w-full bg-white py-20 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
@@ -122,103 +263,8 @@ export default function Home() {
   </div>
 </section>
 
-<section className="w-full bg-gray-50 py-20 px-6">
-  <div className="max-w-5xl mx-auto text-center">
-    <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
-      See it in Action
-    </h2>
-    <p className="mt-4 text-lg text-gray-700">
-      Track leads, follow up, and close — all in under 60 seconds.
-    </p>
-
-    <div className="mt-10 rounded-2xl overflow-hidden border border-gray-200 shadow-xl max-w-4xl mx-auto">
-      <video
-        src="/demo.mp4"
-        controls
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-full h-auto"
-      />
-    </div>
-
-    <p className="mt-6 text-sm text-gray-500 italic">
-      No clutter. No learning curve. Just results.
-    </p>
-  </div>
-</section>
-<section className="w-full bg-gray-100 py-20 px-6">
-  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    
-    {/* GIF Placeholder */}
-    <div className="md:w-1/2">
-      <img 
-        src="/gifs/smart-nudge.gif" 
-        alt="Smart Lead Nudge Animation" 
-        className="rounded-xl shadow-xl w-full max-w-md mx-auto hover:scale-105 transition-transform duration-300" 
-      />
-    </div>
-
-    {/* Text Content */}
-    <div className="md:w-1/2 text-center md:text-left">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-        Never Let a Lead Go Cold Again!
-      </h2>
-      <p className="text-gray-700 text-lg mb-6">
-        ClientNest tracks inactivity and nudges you when it&apos;s time to follow up — intelligently. 
-        Whether it&apos;s been 3 days or 3 weeks, we help you strike while the deal is still hot.
-      </p>
-      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
-        <li>Auto-identifies cold leads in your pipeline</li>
-        <li>Smart follow-up reminders inside your dashboard</li>
-        <li>Works seamlessly with Email & WhatsApp</li>
-      </ul>
-      <a 
-        href="#"
-        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
-      >
-        Try Smart Nudges in Action →
-      </a>
-    </div>
-  </div>
-</section>
-<section className="w-full bg-white py-20 px-6">
-  <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
-    
-    {/* GIF Placeholder - keep this gif in public/gifs/csv-import.gif */}
-    <div className="md:w-1/2">
-      <img 
-        src="/gifs/csv-import.gif" 
-        alt="Bulk CSV Import Animation" 
-        className="rounded-xl shadow-xl w-full max-w-xl mx-auto hover:scale-105 transition-transform duration-300" 
-      />
-    </div>
-
-    {/* Text Content */}
-    <div className="md:w-1/2 text-center md:text-left">
-      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-        Migrate from Sheets in Seconds
-      </h2>
-      <p className="text-gray-700 text-lg mb-6">
-        Ditch the spreadsheet chaos. Import all your leads in one go and start managing them inside ClientNest&apos;s powerful pipeline view — instantly.
-      </p>
-      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
-        <li>Upload your lead list as a CSV/XLSX</li>
-        <li>Instant mapping to fields (no tech skills needed)</li>
-        <li>Bulk import hundreds of contacts in seconds</li>
-      </ul>
-      <a 
-        href="#"
-        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
-      >
-        Import & Go → 
-      </a>
-    </div>
-  </div>
-</section>
-
-<section className="w-full bg-white py-20 px-6">
+{/* Testimonials */}
+<section className="w-full bg-white py-10 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
       Early Users Love It
@@ -259,6 +305,8 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+{/* Pricing */}
 <section className="w-full bg-gray-50 py-20 px-6">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
@@ -335,7 +383,7 @@ export default function Home() {
       </p>
 </section>
 
-
+{/* FAQ */}
 <section className="w-full bg-white py-20 px-6">
   <div className="max-w-4xl mx-auto">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900 text-center">
@@ -379,7 +427,7 @@ export default function Home() {
     </div>
   </div>
 </section>
-
+{/* Final CTA */}
       <section className="w-full bg-black py-20 px-6">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl md:text-5xl font-bold">
@@ -398,7 +446,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+{/* Footer */}
       <footer className="w-full bg-gray-900 text-white py-10 px-6 mt-[-2px]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-gray-400">&copy; {new Date().getFullYear()} ClientNest. All rights reserved.</div>
