@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'ClientNest – Close More Clients, Effortlessly',
   description: 'Ditch spreadsheets. Organize your leads, follow-ups, and deals – all in one smart CRM.',
-  keywords: ['CRM', 'ClientNest', 'Lead Management', 'Sales Tool', 'Pipeline CRM'],
+  keywords: ['CRM', 'ClientNest', 'Lead Management', 'Sales Tool', 'Pipeline CRM', 'CRM for individuals', 'CRM at $10'],
   authors: [{ name: 'ClientNest Team', url: 'https://clientnesthq.com' }],
   openGraph: {
     title: 'ClientNest – Lightweight CRM to Close More Clients',

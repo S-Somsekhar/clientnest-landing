@@ -98,8 +98,8 @@ export default function Home() {
           desc: 'Log every call, message, or gut feeling. Stay context-aware.',
         },
         {
-          title: 'Stale Lead Alerts',
-          desc: 'ClientNest alerts you about cold leads before they ghost.',
+          title: '1-Click Follow-Ups',
+          desc: 'Reach out via Email or WhatsApp in one click — no switching tabs, no copy-pasting.',
         },
         {
           title: 'No Learning Curve',
@@ -148,6 +148,41 @@ export default function Home() {
     </p>
   </div>
 </section>
+<section className="w-full bg-gray-100 py-20 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    {/* GIF Placeholder */}
+    <div className="md:w-1/2">
+      <img 
+        src="/gifs/smart-nudge.gif" 
+        alt="Smart Lead Nudge Animation" 
+        className="rounded-xl shadow-xl w-full max-w-md mx-auto hover:scale-105 transition-transform duration-300" 
+      />
+    </div>
+
+    {/* Text Content */}
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        Never Let a Lead Go Cold Again
+      </h2>
+      <p className="text-gray-700 text-lg mb-6">
+        ClientNest tracks inactivity and nudges you when it&apos;s time to follow up — intelligently. 
+        Whether it&apos;s been 3 days or 3 weeks, we help you strike while the deal is still hot.
+      </p>
+      <ul className="list-disc list-inside text-gray-700 text-left mb-6">
+        <li>Auto-identifies cold leads in your pipeline</li>
+        <li>Smart follow-up reminders inside your dashboard</li>
+        <li>Works seamlessly with Email & WhatsApp</li>
+      </ul>
+      <a 
+        href="#"
+        className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
+      >
+        Try Smart Nudges in Action →
+      </a>
+    </div>
+  </div>
+</section>
 
 
 <section className="w-full bg-white py-20 px-6">
@@ -192,47 +227,78 @@ export default function Home() {
   </div>
 </section>
 <section className="w-full bg-gray-50 py-20 px-6">
-  <div className="max-w-4xl mx-auto text-center">
+  <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
       Simple, Honest Pricing
     </h2>
     <p className="mt-4 text-lg text-gray-700">
-      No tiers. No tricks. Just one plan that does it all.
+      No tiers. No tricks. Just plans that work.
     </p>
 
-    <div className="mt-12 grid gap-8 md:grid-cols-2">
-      <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200">
-        <h3 className="text-2xl font-bold text-gray-900">Monthly</h3>
-        <p className="mt-2 text-gray-600">Pay as you go</p>
-        <p className="mt-6 text-4xl font-extrabold text-black">$10</p>
-        <p className="text-sm text-gray-500">per month</p>
-        <ul className="mt-6 text-left space-y-2 text-gray-700">
-          <li>✅ All features included</li>
-          <li>✅ 7-day free trial</li>
-          <li>✅ Cancel anytime</li>
-        </ul>
+    <div className="mt-12 grid gap-8 md:grid-cols-3">
+      {/* Monthly Plan */}
+      <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-200 flex flex-col justify-between">
+        <div>
+          <h3 className="text-2xl font-bold text-gray-900">Monthly</h3>
+          <p className="mt-2 text-gray-600">Pay as you go</p>
+          <p className="mt-6 text-4xl font-extrabold text-black">$10</p>
+          <p className="text-sm text-gray-500">per month</p>
+          <ul className="mt-6 text-left space-y-2 text-gray-700">
+            <li>✅ All features included</li>
+            <li>✅ 7-day free trial</li>
+            <li>✅ Cancel anytime</li>
+          </ul>
+        </div>
         <button className="mt-6 w-full bg-black text-white py-3 rounded-xl hover:bg-gray-900 transition">
           Start Free Trial
         </button>
       </div>
 
-      <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-yellow-400">
-        <h3 className="text-2xl font-bold text-gray-900">Yearly</h3>
-        <p className="mt-2 text-gray-600">One charge. Full access. All year long.</p>
-        <p className="mt-6 text-4xl font-extrabold text-black">$99</p>
-        <p className="text-sm text-gray-500">billed annually (save 17%)</p>
-        <ul className="mt-6 text-left space-y-2 text-gray-700">
-          <li>✅ Everything in monthly</li>
-          <li>✅ Priority support</li>
-          <li>✅ Early access to new features</li>
-        </ul>
+      {/* Yearly Plan */}
+      <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-yellow-400 relative flex flex-col justify-between">
+        <div>
+          <div className="absolute top-4 right-4 bg-yellow-300 text-black text-xs font-semibold px-3 py-1 rounded-full">
+            Only 100 spots
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900">Yearly</h3>
+          <p className="mt-2 text-gray-600">One charge. Full access. All year long.</p>
+          <p className="mt-6 text-4xl font-extrabold text-black">$99</p>
+          <p className="text-sm text-gray-500">billed annually (save 17%)</p>
+          <ul className="mt-6 text-left space-y-2 text-gray-700">
+            <li>✅ Everything in monthly</li>
+            <li>✅ Priority support</li>
+            <li>✅ Early access to new features</li>
+          </ul>
+        </div>
         <button className="mt-6 w-full bg-yellow-400 text-black font-semibold py-3 rounded-xl hover:bg-yellow-500 transition">
           Go Yearly & Save
         </button>
       </div>
+
+      {/* Pro Plan */}
+      <div className="bg-gradient-to-b from-gray-900 to-black text-white p-8 rounded-2xl shadow-xl border-2 border-yellow-500 flex flex-col justify-between">
+        <div>
+          <h3 className="text-2xl font-bold text-yellow-400">Pro Plan</h3>
+          <p className="mt-2 text-gray-300">Advanced tools for scaling businesses</p>
+          <p className="mt-6 text-4xl font-extrabold text-white">$15</p>
+          <p className="text-sm text-gray-400">per month (launching soon)</p>
+          <ul className="mt-6 text-left space-y-3">
+            <li>🧾 Invoice Generator <span className="text-yellow-400 font-semibold text-xs ml-2">Coming Soon</span></li>
+            <li>🤖 AI Insights <span className="text-yellow-400 font-semibold text-xs ml-2">Coming Soon</span></li>
+            <li>💬 AI Chatbot <span className="text-yellow-400 font-semibold text-xs ml-2">Coming Soon</span></li>
+            <li>📱 Early Access to Mobile App <span className="text-yellow-400 font-semibold text-xs ml-2">Beta</span></li>
+          </ul>
+        </div>
+        <div className="mt-6 flex justify-center">
+        <span className="animate-pulse px-4 py-2 bg-yellow-500 text-black font-semibold rounded-full shadow-md text-sm">
+        Coming Soon
+        </span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <section className="w-full bg-white py-20 px-6">
   <div className="max-w-4xl mx-auto">
