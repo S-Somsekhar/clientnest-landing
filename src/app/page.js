@@ -514,7 +514,7 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="mt-6 text-center text-sm text-gray-500">
+       {/* <div className="mt-6 text-center text-sm text-gray-500">
           <span className="inline-flex items-center gap-2">
             <Image
               src="/stripe-secure.svg"
@@ -525,7 +525,7 @@ export default function Home() {
             />
             Payments secured via Stripe
           </span>
-        </div>
+        </div> */}
       </footer>
     </main>
   );
