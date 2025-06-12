@@ -110,7 +110,6 @@ export default function Home() {
 <section className="w-full bg-gray-100 py-20 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
     
-    {/* GIF Placeholder - keep this gif in public/gifs/csv-import.gif */}
     <div className="md:w-1/2">
       <img 
         src="/gifs/csv-import.gif" 
@@ -141,10 +140,10 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 <section className="w-full bg-white py-20 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
     
-    {/* GIF Placeholder */}
     <div className="md:w-1/2">
       <img 
         src="/gifs/smart-nudge.gif" 
