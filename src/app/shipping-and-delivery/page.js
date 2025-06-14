@@ -4,7 +4,7 @@ export const metadata = {
   description: "Digital delivery details of ClientNest services.",
 };
 
-export default function ShippingDeliveryPage() {
+export default function ShippingAndDeliveryPage() {
   return (
     <section className="w-full bg-white min-h-screen py-20 px-6">
       <div className="max-w-3xl mx-auto text-gray-800">
@@ -27,7 +27,7 @@ export default function ShippingDeliveryPage() {
         </p>
 
                   <div>
-            <h2 className="text-2xl font-semibold text-blue-800 mb-2">6. Contact</h2>
+            <h2 className="text-2xl font-semibold text-blue-800 mb-2">Contact</h2>
             <p className="text-gray-700">
               If you have any questions, email us at{" "}
               <a href="mailto:support@clientnesthq.com" className="text-blue-600 underline">

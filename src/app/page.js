@@ -534,7 +534,7 @@ export default function Home() {
   <span>|</span>
   <a href="/cancellation-refund" className="hover:underline">Cancellation & Refund</a>
   <span>|</span>
-  <a href="/shipping-delivery" className="hover:underline">Shipping & Delivery</a>
+  <a href="/shipping-and-delivery" className="hover:underline">Shipping & Delivery</a>
   <span>|</span>
   <a href="/contact" className="hover:underline">Contact Us</a>
 </div>
