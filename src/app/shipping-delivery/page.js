@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Shipping & Delivery Policy – ClientNest",
   description: "Digital delivery details of ClientNest services.",
@@ -22,9 +23,9 @@ export default function ShippingDeliveryPage() {
           If you are unable to access the service after payment, please contact our support team.
         </p>
 
-        <a href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
+        <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
           ← Back to Homepage
-        </a>
+        </Link>
       </div>
     </section>
   );

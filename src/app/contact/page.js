@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Contact Us – ClientNest",
   description: "Reach out to the ClientNest team.",
@@ -20,9 +21,9 @@ export default function ContactUsPage() {
 
         <p>If your query is about billing, account issues, or feedback, email us directly and we’ll get back to you within 24–48 hours.</p>
 
-        <a href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
+        <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
           ← Back to Homepage
-        </a>
+        </Link>
       </div>
     </section>
   );

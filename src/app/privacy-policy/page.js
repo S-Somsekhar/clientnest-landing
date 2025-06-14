@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Privacy Policy – ClientNest",
   description: "How we handle your data at ClientNest.",
@@ -64,12 +65,9 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
-            href="/"
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition duration-200"
-          >
-            ← Back to Home
-          </a>
+        <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
+          ← Back to Homepage
+        </Link>
         </div>
       </div>
     </section>

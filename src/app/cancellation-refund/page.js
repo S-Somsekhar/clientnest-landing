@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Cancellation & Refund Policy – ClientNest",
   description: "How cancellations and refunds work at ClientNest.",
@@ -22,9 +23,9 @@ export default function CancellationRefundPage() {
           For any cancellation or refund concerns, contact us at <a href="mailto:support@clientnesthq.com" className="text-blue-600 underline">support@clientnesthq.com</a>
         </p>
 
-        <a href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
+        <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
           ← Back to Homepage
-        </a>
+        </Link>
       </div>
     </section>
   );
