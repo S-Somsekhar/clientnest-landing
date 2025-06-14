@@ -526,6 +526,19 @@ export default function Home() {
             Payments secured via Stripe
           </span>
         </div> */}
+
+<div className="mt-10 text-center text-sm text-gray-500 space-x-4">
+  <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
+  <span>|</span>
+  <a href="/terms-conditions" className="hover:underline">Terms & Conditions</a>
+  <span>|</span>
+  <a href="/cancellation-refund" className="hover:underline">Cancellation & Refund</a>
+  <span>|</span>
+  <a href="/shipping-delivery" className="hover:underline">Shipping & Delivery</a>
+  <span>|</span>
+  <a href="/contact" className="hover:underline">Contact Us</a>
+</div>
+
       </footer>
     </main>
   );
