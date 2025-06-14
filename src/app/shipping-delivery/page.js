@@ -26,6 +26,16 @@ export default function ShippingDeliveryPage() {
           No shipping required
         </p>
 
+                  <div>
+            <h2 className="text-2xl font-semibold text-blue-800 mb-2">6. Contact</h2>
+            <p className="text-gray-700">
+              If you have any questions, email us at{" "}
+              <a href="mailto:support@clientnesthq.com" className="text-blue-600 underline">
+                support@clientnesthq.com
+              </a>
+            </p>
+          </div>
+
         <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
           ← Back to Homepage
         </Link>
