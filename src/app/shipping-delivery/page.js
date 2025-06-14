@@ -22,6 +22,9 @@ export default function ShippingDeliveryPage() {
         <p className="mb-4">
           If you are unable to access the service after payment, please contact our support team.
         </p>
+        <p className="mb-4">
+          No shipping required
+        </p>
 
         <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
           ← Back to Homepage
