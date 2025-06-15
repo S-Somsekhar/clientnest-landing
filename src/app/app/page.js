@@ -1,5 +1,6 @@
 // src/app/app/page.js
 import Countdown from "@/app/components/Countdown";
+import Link from "next/link";
 
 export const metadata = {
   title: "ClientNest App – Launching Soon",
@@ -17,12 +18,12 @@ export default function AppLaunchPage() {
 
         <Countdown />
 
-        <a
+        <Link
           href="/"
           className="inline-block bg-yellow-400 text-black font-bold px-6 py-3 rounded-xl hover:bg-yellow-500 transition"
         >
           Back to Home
-        </a>
+        </Link>
       </div>
     </section>
   );
