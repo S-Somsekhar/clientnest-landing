@@ -6,63 +6,58 @@ export const metadata = {
 
 export default function TermsPage() {
   return (
-    <section className="w-full bg-white min-h-screen py-20 px-4">
-      <div className="max-w-4xl mx-auto text-gray-800 leading-relaxed">
-        <div className="mb-12 text-center">
-          <h1 className="text-4xl font-extrabold text-blue-900">Terms & Conditions</h1>
-          <p className="mt-2 text-sm text-gray-500">Last updated: June 10, 2025</p>
+    <section className="w-full bg-white min-h-screen py-24 px-6">
+  <div className="max-w-4xl mx-auto text-gray-800">
+    <div className="mb-12 text-center">
+      <h1 className="text-4xl md:text-5xl font-bold text-blue-900">Terms & Conditions</h1>
+      <p className="mt-2 text-sm text-gray-500">Last updated: June 10, 2025</p>
+    </div>
+
+    <div className="space-y-12">
+      {[
+        {
+          title: '1. Use of Service',
+          desc: 'You may use our CRM platform only for lawful purposes. You are responsible for all data entered into your account.',
+        },
+        {
+          title: '2. Subscriptions & Billing',
+          desc: 'You agree to pay the applicable fees. Monthly and annual plans renew automatically unless cancelled.',
+        },
+        {
+          title: '3. Intellectual Property',
+          desc: 'ClientNest retains all rights to the platform’s code, design, and content. You own your data.',
+        },
+        {
+          title: '4. Cancellation & Refunds',
+          desc: 'You can cancel anytime. Refunds are handled on a case-by-case basis. Contact support if needed.',
+        },
+        {
+          title: '5. Limitation of Liability',
+          desc: 'We are not liable for any indirect damages or data loss. The platform is provided “as is”.',
+        },
+        {
+          title: '6. Modifications',
+          desc: 'We may update these terms. Continued use after changes means you accept the new terms.',
+        },
+        {
+          title: '7. Contact',
+          desc: 'If you have any questions, email us at support@clientnesthq.com.',
+        },
+      ].map((item, idx) => (
+        <div key={idx} className="p-6 bg-gray-50 rounded-xl shadow-sm border">
+          <h2 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h2>
+          <p className="text-gray-700">{item.desc}</p>
         </div>
+      ))}
+    </div>
 
-        <div className="space-y-10">
-    
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">1. Use of Service</h2>
-            <p className="mt-2 text-gray-700">You may use our CRM platform only for lawful purposes. You are responsible for all data entered into your account.</p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">2. Subscriptions & Billing</h2>
-            <p className="mt-2 text-gray-700">You agree to pay the applicable fees. Monthly and annual plans renew automatically unless cancelled.</p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">3. Intellectual Property</h2>
-            <p className="mt-2 text-gray-700">ClientNest retains all rights to the platform&apos;s code, design, and content. You own your data.</p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">4. Cancellation & Refunds</h2>
-            <p className="mt-2 text-gray-700">You can cancel anytime. Refunds are handled on a case-by-case basis. Contact support if needed.</p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">5. Limitation of Liability</h2>
-            <p className="mt-2 text-gray-700">We are not liable for any indirect damages or data loss. The platform is provided “as is”.</p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">6. Modifications</h2>
-            <p className="mt-2 text-gray-700">We may update these terms. Continued use after changes means you accept the new terms.</p>
-          </div>
-
-          <div>
-            <h2 className="text-2xl font-semibold text-blue-800">7. Contact</h2>
-            <p className="mt-2 text-gray-700">
-              If you have any questions, email us at{" "}
-              <a href="mailto:support@clientnesthq.com" className="text-blue-600 underline">
-                support@clientnesthq.com
-              </a>.
-            </p>
-          </div>
-        </div>
-
-                <div className="mt-12 text-center">
-        <Link href="/" className="inline-block mt-10 text-blue-900 font-medium underline">
-          ← Back to Homepage
-        </Link>
-        </div>
-      </div>
-    </section>
+    <div className="mt-12 text-center">
+      <Link href="/" className="text-blue-900 font-medium underline">
+        ← Back to Homepage
+      </Link>
+    </div>
+  </div>
+</section>
   );
 }
 

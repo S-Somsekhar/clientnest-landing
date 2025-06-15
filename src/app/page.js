@@ -5,27 +5,53 @@ export const metadata = {
   title: 'ClientNest – Close More Clients, Effortlessly',
   description: 'Ditch spreadsheets. Organize your leads, follow-ups, and deals – all in one smart CRM.',
 };
-{/* Hero Section */}
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 flex flex-col items-center px-6 py-20 text-center font-sans">
-      <div className="max-w-3xl">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
-          Ditch Spreadsheets. <br />
-          Close More Clients.
-        </h1>
-        <p className="mt-6 text-lg md:text-2xl text-gray-700">
-          Simple CRM for solopreneurs, coaches, freelancers & closers.
-        </p>
+    <main className="min-h-screen bg-gray-50 font-sans">
+            {/* Navbar */}
+      <header className="w-full px-6 py-4 flex items-center justify-between bg-white shadow-md fixed top-0 z-50">
+        <div className="flex items-center gap-8">
+          <h1 className="text-xl md:text-2xl font-bold text-blue-900 tracking-tight">
+            ClientNest
+          </h1>
+          <nav className="hidden md:flex gap-8 text-base font-semibold tracking-wide text-gray-700">
+            <a href="#features" className="hover:text-blue-900 transition">Features</a>
+            <a href="#pricing" className="hover:text-blue-900 transition">Pricing</a>
+            <a href="#faq" className="hover:text-blue-900 transition">FAQ</a>
+            <a href="#contact" className="hover:text-blue-900 transition">Contact</a>
+          </nav>
+        </div>
+        <a
+          href="/app"
+          className="bg-blue-900 text-white px-4 py-2 rounded-md text-sm md:text-base hover:bg-blue-800 transition"
+        >
+          Go to App
+        </a>
+      </header>
 
-      <WaitlistForm />
+      {/* Hero Section */}
+      <div className="flex flex-col items-center justify-center text-center px-6 pt-28 pb-16">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
+            Ditch Spreadsheets. <br />
+            Close More Clients.
+          </h1>
+          <p className="mt-6 text-lg md:text-2xl text-gray-700">
+            Simple CRM for solopreneurs, coaches, freelancers & closers.
+          </p>
 
-        <p className="mt-4 text-sm text-gray-500">
-          Launching July 2025 – No credit card required.
-        </p>
+          <div className="mt-8">
+            <WaitlistForm />
+          </div>
+
+          <p className="mt-4 text-sm text-gray-500">
+            Launching July 2025 – No credit card required.
+          </p>
+        </div>
       </div>
+
 {/* Comparison Table */}
-<section className="w-full bg-white py-5 px-6 mt-24">
+<section className="w-full bg-white py-16 px-6 mt-8">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
       Tired of Losing Leads?
@@ -34,38 +60,37 @@ export default function Home() {
       Track. Follow up. Close. Stress-free.
     </p>
 
-    {/* Scrollable Table Wrapper */}
-    <div className="mt-12 relative overflow-x-auto w-full">
-     
-      <table className="min-w-full text-left border-collapse shadow-md rounded-xl overflow-hidden z-0 relative">
-        <thead>
-          <tr className="bg-blue-900 text-white">
-            <th className="p-4">Tool</th>
+    {/* Scrollable Table */}
+    <div className="mt-12 relative overflow-x-auto rounded-xl shadow-lg">
+      <table className="min-w-full text-left border-collapse">
+        <thead className="sticky top-0 z-10 bg-blue-900 text-white text-sm md:text-base">
+          <tr>
+            <th className="p-4 font-semibold">Tool</th>
             <th className="p-4">Spreadsheets</th>
             <th className="p-4">Traditional CRMs</th>
             <th className="p-4">ClientNest</th>
           </tr>
         </thead>
-        <tbody className="text-gray-700 bg-white">
-          <tr className="bg-gray-50 border-b">
+        <tbody className="text-gray-800 text-sm md:text-base animate-fade-in">
+          <tr className="bg-gray-50 border-b hover:bg-gray-100 transition">
             <td className="p-4 font-semibold">Ease of Use</td>
             <td className="p-4">Manual, cluttered</td>
             <td className="p-4">Complex & bloated</td>
             <td className="p-4">One-click workflow</td>
           </tr>
-          <tr className="border-b">
+          <tr className="border-b hover:bg-gray-50 transition">
             <td className="p-4 font-semibold">Follow-ups</td>
             <td className="p-4">Easily forgotten</td>
             <td className="p-4">Over-engineered</td>
             <td className="p-4">Daily reminders</td>
           </tr>
-          <tr className="bg-gray-50 border-b">
+          <tr className="bg-gray-50 border-b hover:bg-gray-100 transition">
             <td className="p-4 font-semibold">Setup Time</td>
             <td className="p-4">Hours</td>
             <td className="p-4">Days</td>
             <td className="p-4">5 mins</td>
           </tr>
-          <tr>
+          <tr className="hover:bg-gray-50 transition">
             <td className="p-4 font-semibold">Cost</td>
             <td className="p-4">Free (but chaotic)</td>
             <td className="p-4">$40+/mo</td>
@@ -107,7 +132,7 @@ export default function Home() {
 </section>
 
 {/* USP Section */}
-<section className="w-full bg-gray-100 py-20 px-6">
+<section id="features" className="w-full bg-gray-100 py-20 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
     
     <div className="md:w-1/2">
@@ -214,7 +239,7 @@ export default function Home() {
 </section>
 
 {/* Feature Stack */}
-      <section className="w-full bg-white py-20 px-6">
+  <section className="w-full bg-white py-20 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
       What Makes ClientNest a No-Brainer?
@@ -223,7 +248,7 @@ export default function Home() {
       Built for solopreneurs who hate complexity. Everything you need. Nothing you don&apos;t.
     </p>
 
-    <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-left">
+    <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-left">
       {[
         {
           title: 'Drag-n-Drop Pipelines',
@@ -252,7 +277,7 @@ export default function Home() {
       ].map((feature, i) => (
         <div
           key={i}
-          className="bg-gray-50 rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-all"
+          className="bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow transition-transform transform hover:shadow-lg hover:-translate-y-1 duration-300"
         >
           <h3 className="text-xl font-semibold text-blue-900">{feature.title}</h3>
           <p className="mt-2 text-gray-700">{feature.desc}</p>
@@ -263,7 +288,7 @@ export default function Home() {
 </section>
 
 {/* Testimonials */}
-<section className="w-full bg-white py-10 px-6">
+<section className="w-full bg-gray-100 py-10 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
       Early Users Love It
@@ -306,7 +331,7 @@ export default function Home() {
 </section>
 
 {/* Pricing */}
-<section className="w-full bg-gray-50 py-20 px-6">
+<section id= "pricing" className="w-full bg-white py-20 px-6">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
       Simple, Affordable Pricing
@@ -335,25 +360,27 @@ export default function Home() {
       </div>
 
       {/* Yearly Plan */}
-      <div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-yellow-400 relative flex flex-col justify-between">
-        <div>
-          <div className="absolute top-4 right-4 bg-yellow-300 text-black text-xs font-semibold px-3 py-1 rounded-full">
-            Only 100 spots
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900">Yearly</h3>
-          <p className="mt-2 text-gray-600">One charge. Full access. All year long.</p>
-          <p className="mt-6 text-4xl font-extrabold text-black">$99</p>
-          <p className="text-sm text-gray-500">billed annually (save 17%)</p>
-          <ul className="mt-6 text-left space-y-2 text-gray-700">
-            <li>✅ Everything in monthly</li>
-            <li>✅ Priority support</li>
-            <li>✅ Early access to new features</li>
-          </ul>
-        </div>
-        <button className="mt-6 w-full bg-yellow-400 text-black font-semibold py-3 rounded-xl hover:bg-yellow-500 transition">
-          Go Yearly & Save
-        </button>
+<div className="bg-white p-8 rounded-2xl shadow-lg border-2 border-yellow-400 relative flex flex-col justify-between overflow-hidden">
+  {/* Corner Ribbon */}
+      <div className="absolute top-4 -right-16 w-56 transform rotate-[30deg] bg-yellow-400 text-black text-sm font-bold text-center py-2 shadow-md z-10 animate-pulse ring-2 ring-yellow-300 ring-offset-1">
+      100 Spots Only
       </div>
+
+  <div>
+    <h3 className="text-2xl font-bold text-gray-900">Yearly</h3>
+    <p className="mt-2 text-gray-600">One charge. Full access. All year long.</p>
+    <p className="mt-6 text-4xl font-extrabold text-black">$99</p>
+    <p className="text-sm text-gray-500">billed annually (save 17%)</p>
+    <ul className="mt-6 text-left space-y-2 text-gray-700">
+      <li>✅ Everything in monthly</li>
+      <li>✅ Priority support</li>
+      <li>✅ Early access to new features</li>
+    </ul>
+  </div>
+  <button className="mt-6 w-full bg-yellow-400 text-black font-semibold py-3 rounded-xl hover:bg-yellow-500 transition">
+    Go Yearly & Save
+  </button>
+</div>
 
       {/* Pro Plan */}
       <div className="bg-gradient-to-b from-gray-900 to-black text-white p-8 rounded-2xl shadow-xl border-2 border-yellow-500 flex flex-col justify-between">
@@ -382,8 +409,9 @@ export default function Home() {
       </p>
 </section>
 
+
 {/* FAQ */}
-<section className="w-full bg-white py-20 px-6">
+<section className="w-full bg-gray-50 py-20 px-6" id="faq">
   <div className="max-w-4xl mx-auto">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900 text-center">
       Got Questions?
@@ -415,38 +443,51 @@ export default function Home() {
           a: "Yep — if you’re unhappy within 7 days of subscribing, email us for a full refund. No drama.",
         },
       ].map((faq, i) => (
-        <details key={i} className="group border border-gray-200 rounded-xl p-4">
-          <summary className="flex justify-between items-center cursor-pointer text-blue-900 font-medium text-lg">
+        <details
+          key={i}
+          className="group bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all"
+        >
+          <summary className="flex justify-between items-center cursor-pointer text-blue-900 font-semibold text-lg">
             {faq.q}
-            <span className="transition-transform group-open:rotate-180 text-xl">⬇</span>
+            <svg
+              className="w-5 h-5 text-blue-700 transition-transform duration-300 group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+            </svg>
           </summary>
-          <p className="mt-3 text-gray-700">{faq.a}</p>
+          <p className="mt-3 text-gray-700 leading-relaxed">{faq.a}</p>
         </details>
       ))}
     </div>
   </div>
 </section>
+
 {/* Final CTA */}
-      <section className="w-full bg-black py-20 px-6">
-        <div className="max-w-3xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-5xl font-bold">
-            Try ClientNest Free for 14 Days
-          </h2>
-          <p className="mt-4 text-lg text-gray-300">
-            No credit card required. Cancel anytime.
-          </p>
-          <div className="mt-8">
-            <a
-              href="#"
-              className="inline-block bg-yellow-400 text-black font-semibold px-8 py-4 rounded-xl text-lg hover:bg-yellow-500 transition"
-            >
-              Get Started — It&apos;s Free
-            </a>
-          </div>
-        </div>
-      </section>
+        <section className="w-full bg-black py-20 px-6">
+  <div className="max-w-3xl mx-auto text-center text-white">
+    <h2 className="text-3xl md:text-5xl font-bold">
+      Try ClientNest Free for 14 Days
+    </h2>
+    <p className="mt-4 text-lg text-gray-300">
+      No credit card required. Cancel anytime.
+    </p>
+    <div className="mt-8">
+      <a
+        href="#"
+        className="inline-block bg-yellow-400 text-black font-semibold px-8 py-4 rounded-xl text-lg hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-400/40 transition"
+      >
+        Get Started — It&apos;s Free
+      </a>
+    </div>
+  </div>
+</section>
+
 {/* Footer */}
-      <footer className="w-full bg-gray-900 text-white py-10 px-6 mt-[-2px]">
+      <footer className="w-full bg-gray-900 text-white py-10 px-6 mt-[-2px] border-t border-gray-800" >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-gray-400">&copy; {new Date().getFullYear()} ClientNest. All rights reserved.</div>
           <div className="flex gap-6 mt-6 md:mt-0">
@@ -493,7 +534,7 @@ export default function Home() {
     </svg>
   </a>
 
-  <a
+  <a id="contact"
     href="mailto:support@clientnesthq.com"
     aria-label="Email"
     className="hover:text-yellow-400 transition p-2 rounded-full"
@@ -514,7 +555,7 @@ export default function Home() {
 
           </div>
         </div>
-       {/* <div className="mt-6 text-center text-sm text-gray-500">
+        <div className="mt-6 text-center text-sm text-gray-500">
           <span className="inline-flex items-center gap-2">
             <Image
               src="/stripe-secure.svg"
@@ -525,18 +566,13 @@ export default function Home() {
             />
             Payments secured via Stripe
           </span>
-        </div> */}
+        </div> 
 
-<div className="mt-10 text-center text-sm text-gray-500 space-x-4">
+<div className="mt-5 text-center text-sm text-gray-500 space-x-4">
   <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
   <span>|</span>
   <a href="/terms-conditions" className="hover:underline">Terms & Conditions</a>
-  <span>|</span>
-  <a href="/cancellation-refund" className="hover:underline">Cancellation & Refund</a>
-  <span>|</span>
-  <a href="/shipping-and-delivery" className="hover:underline">Shipping & Delivery</a>
-  <span>|</span>
-  <a href="/contact" className="hover:underline">Contact Us</a>
+
 </div>
 
       </footer>
