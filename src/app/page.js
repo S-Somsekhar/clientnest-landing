@@ -1,5 +1,6 @@
 // src/app/page.js
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistForm from "./components/WaitlistForm";
 export const metadata = {
   title: 'ClientNest – Close More Clients, Effortlessly',
@@ -21,12 +22,12 @@ export default function Home() {
             <a href="#contact" className="hover:text-blue-900 transition">Contact</a>
           </nav>
         </div>
-        <a
+        <Link
           href="/app"
           className="bg-blue-900 text-white px-4 py-2 rounded-md text-sm md:text-base hover:bg-blue-800 transition"
         >
           Go to App
-        </a>
+        </Link>
       </header>
 
       {/* Hero Section */}

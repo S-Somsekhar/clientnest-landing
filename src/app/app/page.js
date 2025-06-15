@@ -12,7 +12,7 @@ export default function AppLaunchPage() {
       <div className="text-center max-w-xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-yellow-400">Launching Soon</h1>
         <p className="text-lg text-gray-300 mb-8">
-          The full CRM experience is almost here. We're putting on the final touches.
+          The full CRM experience is almost here. We&apos;re putting on the final touches.
         </p>
 
         <Countdown />
