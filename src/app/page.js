@@ -477,12 +477,12 @@ export default function Home() {
       No credit card required. Cancel anytime.
     </p>
     <div className="mt-8">
-      <a
+      <Link
         href="/app"
         className="inline-block bg-yellow-400 text-black font-semibold px-8 py-4 rounded-xl text-lg hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-400/40 transition"
       >
         Get Started — It&apos;s Free
-      </a>
+      </Link>
     </div>
   </div>
 </section>
