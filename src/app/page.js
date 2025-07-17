@@ -71,10 +71,8 @@ export default function Home() {
 
 </div>
 
-
-
 {/* Comparison Table */}
-<section className="w-full bg-white py-16 px-6 mt-8">
+<section className="w-full bg-white py-16 px-6">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-5xl font-bold text-blue-900">
       Tired of Losing Leads?
