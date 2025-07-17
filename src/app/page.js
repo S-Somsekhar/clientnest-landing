@@ -1,7 +1,5 @@
 // src/app/page.js
 import Image from "next/image";
-import Link from "next/link";
-import WaitlistForm from "./components/WaitlistForm";
 export const metadata = {
   title: 'ClientNest – Close More Clients, Effortlessly',
   description: 'Ditch spreadsheets. Organize your leads, follow-ups, and deals – all in one smart CRM.',
@@ -22,34 +20,58 @@ export default function Home() {
             <a href="#contact" className="hover:text-blue-900 transition">Contact</a>
           </nav>
         </div>
-        <Link
-          href="/app"
+        <a
+  href="https://app.clientnesthq.com"
+  target="_blank"
+  rel="noopener noreferrer"
           className="bg-blue-900 text-white px-4 py-2 rounded-md text-sm md:text-base hover:bg-blue-800 transition"
         >
           Go to App
-        </Link>
+        </a>
       </header>
 
-      {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center text-center px-6 pt-28 pb-16">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
-            Ditch Spreadsheets. <br />
-            Close More Clients.
-          </h1>
-          <p className="mt-6 text-lg md:text-2xl text-gray-700">
-            Simple CRM for solopreneurs, coaches, freelancers & closers.
-          </p>
+{/* Hero Section */}
+<div className="flex flex-col items-center justify-center text-center px-6 pt-28 pb-20 bg-white">
+  <div className="max-w-3xl">
+    <div className="inline-flex items-center px-4 py-1.5 mb-4 rounded-full text-mid font-medium bg-green-100 text-green-800 shadow-sm animate-pulse">
+      🚀 ClientNest is now live — Start your free trial today
+    </div>
 
-          <div className="mt-8">
-            <WaitlistForm />
-          </div>
+    <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight">
+      Ditch Spreadsheets. <br />
+      Close More Clients.
+    </h1>
 
-          <p className="mt-4 text-sm text-gray-500">
-            Launching July 2025 – No credit card required.
-          </p>
-        </div>
-      </div>
+    <p className="mt-6 text-lg md:text-2xl text-gray-700">
+      The clean, powerful CRM built for solopreneurs, coaches, freelancers & closers.
+    </p>
+
+    <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+      <a
+        href="https://app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-blue-900 text-white text-lg font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-blue-800 transition"
+      >
+        Start Free Trial
+      </a>
+      <a
+        href="#features"
+        className="inline-block border border-blue-900 text-blue-900 text-lg font-semibold px-6 py-3 rounded-xl hover:bg-blue-900 hover:text-white transition"
+      >
+        Explore Features
+      </a>
+    </div>
+
+    <p className="mt-6 text-sm text-gray-500">
+      No credit card required · Built for speed & simplicity
+    </p>
+  </div>
+  <p className="mt-10 text-sm text-gray-600 uppercase tracking-widest">Trusted by early adopters across 5+ countries</p>
+
+</div>
+
+
 
 {/* Comparison Table */}
 <section className="w-full bg-white py-16 px-6 mt-8">
@@ -158,7 +180,9 @@ export default function Home() {
         <li>Bulk import hundreds of contacts in seconds</li>
       </ul>
       <a 
-        href="#"
+        href="https://app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
       >
         Import & Go → 
@@ -193,7 +217,9 @@ export default function Home() {
         <li>Works seamlessly with Email & WhatsApp</li>
       </ul>
       <a 
-        href="#"
+        href="https://app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
       >
         Try Smart Nudges in Action →
@@ -220,7 +246,9 @@ export default function Home() {
         <li>Track total revenue earned from each client</li>
       </ul>
       <a 
-        href="#"
+        href="https://app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-800 transition"
       >
         See Client Dashboard →
@@ -355,9 +383,13 @@ export default function Home() {
             <li>✅ Cancel anytime</li>
           </ul>
         </div>
-        <button className="mt-6 w-full bg-black text-white py-3 rounded-xl hover:bg-gray-900 transition">
+        <a
+        href="https://app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 w-full bg-black text-white py-3 rounded-xl hover:bg-gray-900 transition">
           Start Free Trial
-        </button>
+        </a>
       </div>
 
       {/* Yearly Plan */}
@@ -378,9 +410,13 @@ export default function Home() {
       <li>✅ Early access to new features</li>
     </ul>
   </div>
-  <button className="mt-6 w-full bg-yellow-400 text-black font-semibold py-3 rounded-xl hover:bg-yellow-500 transition">
+      <a
+        href="https://app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer" 
+        className="mt-6 w-full bg-yellow-400 text-black font-semibold py-3 rounded-xl hover:bg-yellow-500 transition">
     Go Yearly & Save
-  </button>
+  </a>
 </div>
 
       {/* Pro Plan */}
@@ -477,12 +513,14 @@ export default function Home() {
       No credit card required. Cancel anytime.
     </p>
     <div className="mt-8">
-      <Link
-        href="/app"
+      <a
+        href="https:app.clientnesthq.com"
+        target="_blank"
+        rel="noopener noreferrer"    
         className="inline-block bg-yellow-400 text-black font-semibold px-8 py-4 rounded-xl text-lg hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-400/40 transition"
       >
         Get Started — It&apos;s Free
-      </Link>
+      </a>
     </div>
   </div>
 </section>
