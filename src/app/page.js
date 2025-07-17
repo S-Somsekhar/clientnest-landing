@@ -512,7 +512,7 @@ export default function Home() {
     </p>
     <div className="mt-8">
       <a
-        href="https:app.clientnesthq.com"
+        href="https://app.clientnesthq.com"
         target="_blank"
         rel="noopener noreferrer"    
         className="inline-block bg-yellow-400 text-black font-semibold px-8 py-4 rounded-xl text-lg hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-400/40 transition"
