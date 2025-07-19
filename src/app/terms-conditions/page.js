@@ -1,63 +1,112 @@
 import Link from "next/link";
+
 export const metadata = {
   title: "Terms & Conditions – ClientNest",
-  description: "The rules of using ClientNest.",
+  description: "The legal terms governing your use of ClientNest.",
 };
 
 export default function TermsPage() {
   return (
-    <section className="w-full bg-white min-h-screen py-24 px-6">
-  <div className="max-w-4xl mx-auto text-gray-800">
-    <div className="mb-12 text-center">
-      <h1 className="text-4xl md:text-5xl font-bold text-blue-900">Terms & Conditions</h1>
-      <p className="mt-2 text-sm text-gray-500">Last updated: June 10, 2025</p>
-    </div>
-
-    <div className="space-y-12">
-      {[
-        {
-          title: '1. Use of Service',
-          desc: 'You may use our CRM platform only for lawful purposes. You are responsible for all data entered into your account.',
-        },
-        {
-          title: '2. Subscriptions & Billing',
-          desc: 'You agree to pay the applicable fees. Monthly and annual plans renew automatically unless cancelled.',
-        },
-        {
-          title: '3. Intellectual Property',
-          desc: 'ClientNest retains all rights to the platform’s code, design, and content. You own your data.',
-        },
-        {
-          title: '4. Cancellation & Refunds',
-          desc: 'You can cancel anytime. Refunds are handled on a case-by-case basis. Contact support if needed.',
-        },
-        {
-          title: '5. Limitation of Liability',
-          desc: 'We are not liable for any indirect damages or data loss. The platform is provided “as is”.',
-        },
-        {
-          title: '6. Modifications',
-          desc: 'We may update these terms. Continued use after changes means you accept the new terms.',
-        },
-        {
-          title: '7. Contact',
-          desc: 'If you have any questions, email us at support@clientnesthq.com.',
-        },
-      ].map((item, idx) => (
-        <div key={idx} className="p-6 bg-gray-50 rounded-xl shadow-sm border">
-          <h2 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h2>
-          <p className="text-gray-700">{item.desc}</p>
+    <section className="w-full bg-white min-h-screen py-16 sm:py-24 px-4 sm:px-6">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">
+              Terms of Service
+            </span>
+          </h1>
+          <div className="flex justify-center items-center gap-4 text-sm text-gray-500">
+            <span>Last updated: June 10, 2025</span>
+            <span>•</span>
+            <Link href="/privacy" className="text-blue-600 hover:underline">
+              View Privacy Policy
+            </Link>
+          </div>
         </div>
-      ))}
-    </div>
 
-    <div className="mt-12 text-center">
-      <Link href="/" className="text-blue-900 font-medium underline">
-        ← Back to Homepage
-      </Link>
-    </div>
-  </div>
-</section>
+        {/* Intro */}
+        <div className="prose prose-blue max-w-none mb-12">
+          <p className="text-gray-700">
+            By using <strong>ClientNest</strong> ("Service"), you agree to these terms. Please read them carefully.
+          </p>
+        </div>
+
+        {/* Terms Sections */}
+        <div className="space-y-6">
+          {[
+            {
+              title: "Account Responsibilities",
+              content: "You must provide accurate information and keep your login credentials secure. You're responsible for all activity under your account."
+            },
+            {
+              title: "Subscription Terms",
+              content: (
+                <ul className="space-y-2 pl-5">
+                  <li className="relative ">
+                    Monthly/annual plans auto-renew until cancelled
+                  </li>
+                  <li className="relative ">
+                    Fees are non-refundable except as required by law
+                  </li>
+                  <li className="relative ">
+                    Price changes communicated 30 days in advance
+                  </li>
+                </ul>
+              )
+            },
+            {
+              title: "Content Ownership",
+              content: "You retain rights to your business data. We retain rights to our platform, design, and code."
+            },
+            {
+              title: "Acceptable Use",
+              content: "Don't misuse the Service (spam, illegal activities, reverse engineering, etc.). We may suspend violators."
+            },
+            {
+              title: "Limitations",
+              content: "We're not liable for indirect damages or data loss. Maximum liability is limited to fees paid in the last 6 months."
+            },
+            {
+              title: "Changes to Terms",
+              content: "We'll notify you of material changes. Continued use after changes constitutes acceptance."
+            },
+            {
+              title: "Contact",
+              content: (
+                <>
+                  Questions? Email{" "}
+                  <a href="mailto:legal@clientnesthq.com" className="text-blue-600 hover:underline">
+                    support@clientnesthq.com
+                  </a>
+                </>
+              )
+            }
+          ].map((section, index) => (
+            <div key={index} className="p-6 bg-gray-50 rounded-lg border border-gray-200">
+              <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                {index + 1}. {section.title}
+              </h2>
+              <div className="text-gray-700">
+                {typeof section.content === 'string' ? <p>{section.content}</p> : section.content}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer */}
+        <div className="mt-16 text-center">
+          <Link 
+            href="/" 
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+          >
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            Back to Homepage
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }
-
