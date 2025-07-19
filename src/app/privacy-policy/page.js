@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
         {/* Intro */}
         <div className="prose prose-blue max-w-none mb-12">
           <p className="text-gray-700">
-            At <strong>ClientNest</strong> ("we", "us", or "our"), we&apos;re committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding that information.
+            At <strong>ClientNest</strong> (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), we&apos;re committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding that information.
           </p>
         </div>
 

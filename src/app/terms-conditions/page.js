@@ -28,7 +28,7 @@ export default function TermsPage() {
         {/* Intro */}
         <div className="prose prose-blue max-w-none mb-12">
           <p className="text-gray-700">
-            By using <strong>ClientNest</strong> ("Service"), you agree to these terms. Please read them carefully.
+            By using <strong>ClientNest</strong> (&quot;Service&quot;), you agree to these terms. Please read them carefully.
           </p>
         </div>
 

@@ -291,7 +291,7 @@ export default function Home() {
         Never Let a Lead <span className="text-blue-600">Go Cold</span> Again
       </h2>
       <p className="text-gray-700 text-lg sm:text-xl mb-6 leading-relaxed">
-        ClientNest tracks inactivity and <span className="font-semibold">nudges you intelligently</span> when it's time to follow up — whether it&apos;s been 3 days or 3 weeks.
+        ClientNest tracks inactivity and <span className="font-semibold">nudges you intelligently</span> when it&apos;s time to follow up — whether it&apos;s been 3 days or 3 weeks.
       </p>
       <ul className="space-y-3 text-gray-700 text-left mb-8">
         {[
@@ -383,7 +383,7 @@ export default function Home() {
       </span>
     </h2>
     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-      Everything you need to close deals.<br className="hidden sm:block" /> Nothing you don't.
+      Everything you need to close deals.<br className="hidden sm:block" /> Nothing you don&apos;t.
     </p>
 
     <div className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
