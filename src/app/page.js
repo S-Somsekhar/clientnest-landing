@@ -683,7 +683,7 @@ export default function Home() {
     </div>
 
     {/* Trust Indicators */}
-    <div className="mt-16 pt-6 border-t border-gray-200">
+    <div className="mt-8 pt-6 border-t border-gray-200">
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-500">
         <span className="flex items-center">
           <svg className="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

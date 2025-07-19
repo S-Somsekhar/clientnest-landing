@@ -71,7 +71,7 @@ export default function DemoSection() {
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#features"
-            className="px-5 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-200 transition-colors text-sm sm:text-base"
+            className="px-5 py-3 border border-gray-500 text-black rounded-lg font-medium hover:bg-gray-200 transition-colors text-sm sm:text-base"
           >
             Explore All Features
           </a>
