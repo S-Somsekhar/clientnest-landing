@@ -56,7 +56,7 @@ export default function DemoSection() {
               ref={videoRef}
               src="/demo.mp4"
               controls={isPlaying}
-              poster="/demo-poster.jpg"
+              poster="/demo-poster.png"
               className="w-full h-auto aspect-video bg-gray-100 cursor-pointer"
               aria-label="ClientNest platform demonstration"
               onPlay={() => setIsPlaying(true)}
